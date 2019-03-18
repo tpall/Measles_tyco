@@ -4,7 +4,7 @@ library(reshape2)
 library(gplots)
 
 # skip first two lines
-measles <- read.csv("~/Downloads/MEASLES_Cases_1909-2001_20150410025549.csv",skip=2,na.strings = "-")
+# measles <- read.csv("~/Downloads/MEASLES_Cases_1909-2001_20150410025549.csv",skip=2,na.strings = "-")
 pdf("/home/taavi/Dropbox/PlayaroundCode/Measles_heatmap.pdf",width=8)
 measles %>%
   select(-X) %>% # extra column gets imported by read.csv
